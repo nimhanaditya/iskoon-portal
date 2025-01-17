@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About Us</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .page-container {
+            min-height: 100vh;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/about%20us.jpg-zshPROxVzb6yb42l8whroH024xeke2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-bottom: 100px;
+            position: relative;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .header-line {
+            width: 100px;
+            height: 4px;
+            background-color: #0070f3;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+        .card {
+            background-color: #F7DCBF(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .achievement {
+            position: relative;
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .achievement img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .achievement-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.016);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+        .work-environment img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        .social-links a:hover {
+            color: #0070f3;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .image-section {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-section img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .image-section .text-content {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column;
+            }
+
+            .image-section img {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .carousel {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            display: flex;
+            width: 300%; /* Adjust based on the number of slides */
+            animation: slide-animation 9s infinite;
+        }
+
+        .carousel-item {
+            flex: 1 0 100%; /* Each item takes up 100% of the carousel width */
+            height: 300px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slide-animation {
+            0%, 33.33% {
+                transform: translateX(0);
+            }
+            33.34%, 66.66% {
+                transform: translateX(-100%);
+            }
+            66.67%, 100% {
+                transform: translateX(-200%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel, .carousel-item {
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="content">
+            <header class="header">
+                <h1>About Us</h1>
+                <div class="header-line"></div>
+            </header>
+
+            <section class="card">
+                <h2>Our Story</h2>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKGkpgVitVACeFQOr5nP53PoZUgfHQJmTZKw&s" alt="Our Story 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tgQ_yPi6D4hmqAdWVgPiwjRqMs3d7HtfFw&s" alt="Our Story 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Our Story 3">
+                        </div>
+                    </div>
+                    <a href="#" class="carousel-control prev" onclick="moveCarousel(-1); return false;">&lt;</a>
+                    <a href="#" class="carousel-control next" onclick="moveCarousel(1); return false;">&gt;</a>
+                </div>
+                <div class="image-section">
+                    <div class="text-content">
+                        <p>Founded with a vision to transform the digital landscape, we bring together creativity, technical excellence, and the timeless teachings of spiritual wisdom. Inspired by the principles of ISKCON, our journey began with a simple idea: to make technology more accessible and meaningful for everyone while sharing the profound values of devotion, compassion, and service.</p>
+                        <p>Rooted in the philosophy of using every resource in service to humanity and the divine, we aim to blend modern innovation with the rich spiritual heritage of Bhakti Yoga. Our mission is to create digital solutions that not only advance technology but also inspire a deeper connection to spirituality and consciousness.</p>
+                        <p>From developing intuitive platforms to fostering global connections, we are committed to offering tools that uplift, educate, and empower people in their personal and spiritual lives. Guided by the wisdom of ISKCON's teachings, we strive to make the digital world a place of harmony, purpose, and transcendence.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Our Mission</h2>
+                <div class="image-section">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLx4uaGezPncknKSyUpkg-_MESs5gRHLHyQ&s" alt="Our Mission">
+                    <div class="text-content">
+                        <p>We strive to deliver innovative solutions that empower businesses and individuals while fostering a deeper connection to spirituality and purpose. Inspired by the teachings of ISKCON, we are committed to creating technologies and services that align with the values of compassion, integrity, and devotion.</p>
+                        <p>Through dedication, expertise, and a spirit of service, we aim to help our clients achieve their goals, realize their digital potential, and contribute to the greater good. By blending modern innovation with timeless spiritual wisdom, we endeavor to create solutions that not only drive success but also inspire positive transformation in the lives of those we serve.</p>
+                        <p>At the heart of our mission is the belief that technology can be a powerful tool to spread knowledge, connect communities, and support the principles of harmony and self-realization. Together, we work to build a digital future that reflects the values of ISKCON: a future of service, growth, and enlightenment.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Our Values</h2>
+                <div class="grid">
+                    <div>
+                        <h3>Innovation</h3>
+                        <p>Pushing boundaries and embracing new technologies</p>
+                    </div>
+                    <div>
+                        <h3>Excellence</h3>
+                        <p>Delivering quality in everything we do</p>
+                    </div>
+                    <div>
+                        <h3>Integrity</h3>
+                        <p>Building trust through honest partnerships</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Our Founder</h2>
+                <div class="grid">
+                    
+                    <div class="team-member">
+                        <img src="data:image/jpeg;base64,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" alt="Srila Prabhupada">
+                        <h3>Srila Prabhupada</h3>
+                        <p>Founder</p>
+                        <p>Within the final twenty years of his life Srila Prabhupada translated over sixty volumes of classic Vedic scriptures (such as the Bhagavad Gita and the Srimad Bhagavatam) into the English language. For their authority, depth, and clarity, his books have won praise from professors at universities like Harvard and Oxford, and his Bhagavad-Gita As It Is was published by Macmillan Publishers in 1968 and the unabridged edition in 1972, and is now available in over sixty languages around the world. Other books by Srila Prabhupada are available in over eighty different languages. Over 500 million books of his have been distributed to date.</p>
+
+                    </div>
+                   
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Our Achievements</h2>
+                <div class="grid">
+                    <div class="achievement">
+                        <img src="https://iskconeasy.com/wp-content/uploads/2021/07/photo_2021-07-05_15-55-59.jpg" alt="Award Ceremony">
+                        <div class="achievement-overlay">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="Project Milestone">
+                        <div class="achievement-overlay">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Our Work Environment</h2>
+                <div class="grid work-environment">
+                    <div>
+                        <img src="/placeholder.svg?height=200&width=300" alt="Office Space">
+                    </div>
+                    <div>
+                        <img src="/placeholder.svg?height=200&width=300" alt="Team Collaboration">
+                    </div>
+                    <div>
+                        <img src="/placeholder.svg?height=200&width=300" alt="Recreation Area">
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 20px;">We believe in creating a positive and inspiring work environment that fosters creativity, collaboration, and growth.</p>
+            </section>
+        </div>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 ISKCON NVCC. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
